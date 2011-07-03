@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start:</b>
+  <%= @kanten.start %>
+</p>
+
+<p>
+  <b>Ziel:</b>
+  <%= @kanten.ziel %>
+</p>
+
+<p>
+  <b>Laenge:</b>
+  <%= @kanten.laenge %>
+</p>
+
+
+<%= link_to 'Edit', edit_kanten_path(@kanten) %> |
+<%= link_to 'Back', kantens_path %>

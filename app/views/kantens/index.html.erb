@@ -1,0 +1,29 @@
+<h1>Verbindungen</h1>
+
+<table>
+  <tr>
+    <th>Knoten1</th>
+    <th>Knoten2</th>
+    <th>Strecke</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kantens.each do |kanten| %>
+  <tr>
+    <td><%= kanten.start %></td>
+    <td><%= kanten.ziel %></td>
+    <td><%= kanten.laenge %></td>
+    <td><%= link_to 'Show', kanten %></td>
+    <td><%= link_to 'Edit', edit_kanten_path(kanten) %></td>
+    <td><%= link_to 'Destroy', kanten, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Neue Verbindung', new_kanten_path %>
+
+
